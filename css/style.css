@@ -1,7 +1,12 @@
 body {
   overflow-x: hidden;
+  width: 100%
 }
 
+#app {
+  width: 100%;
+  overflow-x: hidden
+}
 .navbar .nav-link {
   font-size: 14px;
   text-transform: uppercase;
@@ -32,6 +37,21 @@ body {
   height: 650px;
   /* margin-top: -300px; */
 }
+@media(max-width : 767px){
+  #showcase {
+    min-height: 600px
+  }
+  #myCarousel {
+    height: 550px
+  }
+  .carousel-inner {
+    height: 530px;
+  }
+  .carousel-item {
+    height: 550px !important;
+    background-position: -100px 0
+  }
+}
 @media(max-width : 425px){
   .carousel-item {
     height: 300px;
@@ -40,17 +60,17 @@ body {
 }
 
 .carousel-image-1 {
-  background: url('../img/page.png');
+  background-image: url('../img/page.png');
   background-size: cover;
 }
 
 .carousel-image-2 {
-  background: url('../img/audi-1890687.jpg');  
+  background-image: url('../img/audi-1890687.jpg');  
   background-size: cover;
 }
 
 .carousel-image-3 {
-  background: url('../img/latest.jpg');
+  background-image: url('../img/latest.jpg');
   background-size: cover;
 }
 
